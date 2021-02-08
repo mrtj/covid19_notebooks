@@ -1,4 +1,9 @@
+import urllib
+import json
 import functools
+
+import pandas as pd
+import dateutil
 
 def lazyprop(fn):
     attr_name = '_lazy_' + fn.__name__
